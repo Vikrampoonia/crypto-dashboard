@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import  { useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { getMarketChart, getCurrentPrice } from "../api/cryptoApi";
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";

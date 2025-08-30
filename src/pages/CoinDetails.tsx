@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Typography, Button } from "@mui/material";
 import CryptoChart from "../components/CryptoChart";

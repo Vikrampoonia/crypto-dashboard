@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Box, Button, Dialog, DialogContent, DialogTitle, MenuItem, TextField, Typography } from "@mui/material";
 import { useCryptos } from "../api/useCryptos";
 import { useTrade } from "../hooks/useTrade";
