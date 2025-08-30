@@ -1,4 +1,5 @@
 import { Container, Typography, CircularProgress } from "@mui/material";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { useCryptos } from "../api/useCryptos";
 import CryptoCard from "../components/CryptoCard";
@@ -21,13 +22,15 @@ const Dashboard = () => {
         <FlexGrid gap={16}>
           {data?.map((crypto: any) => (
             <FlexGridItem key={crypto.id}>
-              <CryptoCard
-                id={crypto.id}
-                name={crypto.name}
-                symbol={crypto.symbol}
-                price={crypto.current_price}
-                image={crypto.image}
-              />
+              <Link to={`/coin/${crypto.id}`} style={{ textDecoration: "none" }}>
+                <CryptoCard
+                  id={crypto.id}
+                  name={crypto.name}
+                  symbol={crypto.symbol}
+                  price={crypto.current_price}
+                  image={crypto.image}
+                />
+              </Link>
             </FlexGridItem>
           ))}
         </FlexGrid>

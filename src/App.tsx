@@ -7,6 +7,7 @@ import Portfolio from "./pages/Portfolio";
 import Account from "./pages/Account";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import CoinDetail from "./pages/CoinDetails";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/coin/:coinId" element={<CoinDetail />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/account" element={<Account />} />
